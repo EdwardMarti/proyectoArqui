@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "988810837927",
+    "firebase_url": "https://restaurantearquiufps.firebaseio.com",
+    "project_id": "restaurantearquiufps",
+    "storage_bucket": "restaurantearquiufps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988810837927:android:5684816758a62c77554082",
+        "android_client_info": {
+          "package_name": "nc.apps.restauranteArquiUfps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988810837927-j4dva12dn4c8kcr2o0knjgtani3ccbg7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nc.apps.restauranteArquiUfps",
+            "certificate_hash": "c35c6e025c2950b9ab6ad61f5a4bf0196d031844"
+          }
+        },
+        {
+          "client_id": "988810837927-9amlnra2nmka6muula8on56eekqe0i14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBArKBMVi-ewhJMe-CY1RBLyM_8dNsTdaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988810837927-9amlnra2nmka6muula8on56eekqe0i14.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
