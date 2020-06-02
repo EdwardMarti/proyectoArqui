@@ -7,10 +7,10 @@ public class Restaurante {
     private double longitud;
     private double latitud;
     private int like;
-    private String imagen;
+    private String img;
 
-    public Restaurante(String imagen, String nombre, String descripcion, double longitud, double latitud, int like) {
-        this.id = imagen;
+    public Restaurante(String img, String nombre, String descripcion, double longitud, double latitud, int like) {
+        this.id = img;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.longitud = longitud;
@@ -18,23 +18,23 @@ public class Restaurante {
         this.like = like;
     }
 
-    public Restaurante(String nombre, String descripcion, double longitud, double latitud, int like, String imagen) {
+    public Restaurante(String nombre, String descripcion, double longitud, double latitud, int like, String img) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.longitud = longitud;
         this.latitud = latitud;
         this.like = like;
-        this.imagen = imagen;
+        this.img = img;
     }
 
-    public Restaurante(String id, String nombre, String descripcion, double longitud, double latitud, int like, String imagen) {
+    public Restaurante(String id, String nombre, String descripcion, double longitud, double latitud, int like, String img) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.longitud = longitud;
         this.latitud = latitud;
         this.like = like;
-        this.imagen = imagen;
+        this.img = img;
     }
 
     public Restaurante() {
@@ -88,11 +88,24 @@ public class Restaurante {
         this.like = like;
     }
 
-    public String getImagen() {
-        return imagen;
+    public String getImg() {
+        return img;
     }
 
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    @Override
+    public String toString() {
+        return "Restaurante{" +
+                "id='" + id + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                ", longitud=" + longitud +
+                ", latitud=" + latitud +
+                ", like=" + like +
+                ", imagen='" + img + '\'' +
+                '}';
     }
 }

@@ -1,14 +1,13 @@
 package nc.apps.feedme;
 
-import android.content.Intent;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -16,7 +15,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-
+import com.google.firebase.database.FirebaseDatabase;
 
 public class RegistreActivity extends AppCompatActivity {
     private static final String TAG = "RegistreActivity";
@@ -53,15 +52,11 @@ public class RegistreActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(RegistreActivity.this, "Usuario creado exitosamente.",
                                     Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(RegistreActivity.this, MainActivity.class));
-                            finish();
-
-
                             //updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                            Toast.makeText(RegistreActivity.this, "Error al registrar usuario. Datos erroneos",
+                            Toast.makeText(RegistreActivity.this, "Error al registrar usuario.",
                                     Toast.LENGTH_SHORT).show();
                             //updateUI(null);
                         }

@@ -40,7 +40,7 @@ public class RestauranteAdapter extends RecyclerView.Adapter<RestauranteAdapter.
         Restaurante restaurante = restaurantes.get(position);
         holder.nombreRestaurante.setText(restaurante.getNombre());
         holder.descripcion.setText(restaurante.getDescripcion());
-       Picasso.get().load(restaurante.getImagen()).into(holder.imagen);
+       Picasso.get().load(restaurante.getImg()).into(holder.imagen);
     }
 
     @Override

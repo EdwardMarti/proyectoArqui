@@ -18,7 +18,6 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:src="@drawable/feedme3"
-              android:layout_marginBottom="20dp"
               >
           </ImageView>
       </LinearLayout>
@@ -30,12 +29,10 @@
           <com.google.android.material.textfield.TextInputLayout
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-
               android:hint="@string/txt_usuario">
               <com.google.android.material.textfield.TextInputEditText
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
-
                   android:id="@+id/input_text_user"/>
           </com.google.android.material.textfield.TextInputLayout>
           <com.google.android.material.textfield.TextInputLayout
@@ -51,9 +48,6 @@
               android:id="@+id/mi_button_login"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:background="@color/colorPrimary"
-              android:layout_marginBottom="10dp"
-              android:layout_marginTop="30dp"
               android:text="@string/label_button_1"/>
 
       </LinearLayout>
@@ -71,17 +65,14 @@
               <TextView
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-                  android:text="Registrar Nuevo  :  ">
+                  android:text="@string/ayuda_1">
               </TextView>
               <TextView
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:text="@string/ayuda_2"
-                  android:background="@color/colorPrimary"
-                  android:layout_marginBottom="20dp"
                   android:id="@+id/label_bottom_new_registrer"
                   android:onClick="registrarUsuario">
-
               </TextView>
           </LinearLayout>
           <LinearLayout

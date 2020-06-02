@@ -51,10 +51,9 @@ public class RegistrarRestauranteActivity extends AppCompatActivity {
                 myRef.push().getKey(),
                 nombre.getText().toString(),
                 descripcion.getText().toString(),
-                1.0,
-                2.0,
-                3,
-                "https://www.perfectdailygrind.com/wp-content/uploads/2016/11/Catuai.jpg"
+                0.0,
+                0.0,
+                0
         );
         Task<Void> task = myRef.child("restaurante").child(restaurante.getId()).setValue(restaurante);
         Toast.makeText(RegistrarRestauranteActivity.this, "Authentication exitosa.", Toast.LENGTH_SHORT).show();
