@@ -8,16 +8,29 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="fill_vertical">
 
-        <ImageView
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/image_2"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:text="Seleccionar Foto"
+            android:id="@+id/seleccionar"
+            android:layout_margin="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="10dp"/>
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
             android:id="@+id/imagen_new_restaurante"
-            android:layout_gravity="center"/>
+            android:layout_marginBottom="30dp"
+           />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -56,6 +69,10 @@
             android:id="@+id/insertar_new_restaurant"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorSecondary"
+
             android:text="Guardar"/>
 
     </LinearLayout>

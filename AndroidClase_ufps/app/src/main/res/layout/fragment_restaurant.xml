@@ -15,7 +15,7 @@
         app:srcCompat="@drawable/plusblanca" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/visualizar_restaurante"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/visualizar_restaurante"/>
+        android:layout_height="wrap_content" />
 </LinearLayout>

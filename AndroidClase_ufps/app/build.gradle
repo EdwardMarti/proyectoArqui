@@ -35,4 +35,9 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'com.squareup.picasso:picasso:2.71828'
+   // implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.4.+'
+
+    implementation 'id.zelory:compressor:2.1.0'
+
 }

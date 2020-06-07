@@ -3,6 +3,7 @@ package nc.apps.feedme;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -52,6 +53,8 @@ public class RegistreActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(RegistreActivity.this, "Usuario creado exitosamente.",
                                     Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(RegistreActivity.this, MainActivity.class));
+                            finish();
                             //updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.

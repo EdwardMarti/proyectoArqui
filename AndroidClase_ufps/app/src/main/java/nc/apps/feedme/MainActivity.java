@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +20,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import nc.apps.feedme.modelo.RessetClaveActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
@@ -27,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     private TextInputEditText input_text_pass;
     private Button mi_button_sesion;
     private TextView label_bottom_new_registrer;
+    private  TextView btnRecuperar;
+    private  int contador =0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,4 +105,31 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, RegistreActivity.class));
     }
 
+    public void recuperarUsuario(View view){
+        startActivity(new Intent(MainActivity.this, RessetClaveActivity.class));
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        if(contador==0){
+            Toast.makeText(getApplicationContext() , "Presione Nuevamente Para Salir", Toast.LENGTH_SHORT).show();
+            contador++;
+        }else {
+            super.onBackPressed();
+        }
+
+        new CountDownTimer(3000, 1000){
+
+            @Override
+            public void onTick(long millisUntilFinished) {
+
+            }
+
+            @Override
+            public void onFinish() {
+            contador=0;
+            }
+        }.start();
+    }
 }
